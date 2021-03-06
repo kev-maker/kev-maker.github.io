@@ -1,4 +1,3 @@
-"use strict"
 
 const typed = new Typed('.typed', {
     strings: [
