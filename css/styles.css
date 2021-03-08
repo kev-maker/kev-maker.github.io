@@ -7,9 +7,7 @@
 body {
   background: #F1F1F1;
   color: #000;
-  /* Es un patron para nuestro background*/
   font-size: 16px;
-  /* Fuente de Font Oswald */
   font-family: 'Oswald', sans-serif;
 }
   /*BOTON SWITCH*/
@@ -298,10 +296,11 @@ Creando el Grid*/
 }
 /*Socila Media*/
 .social {
-  margin: 50px;
+  margin: 50px;  
 }
 .social p {
   text-align: center;
+
   font-size: 30px;
   margin-bottom: 20px;
 }
@@ -319,7 +318,7 @@ Creando el Grid*/
 }
 /*footer Links*/
 .footer-links {
-  background: #0c0c0c;
+  background: #F1F1F1;
   color: #616161;
   font-size: 12px;
   padding: 35px 0;
@@ -327,6 +326,7 @@ Creando el Grid*/
 .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  background: #F1F1F1;
   gap: 10px;
   align-items: flex-start;
   justify-content: center;
@@ -338,13 +338,19 @@ Creando el Grid*/
 }
 
 .footer-container h3 {
-  color: rgb(1, 218, 12);
+  color: black;
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: normal;
 }
-.footer-container ul li {
+.footer-container ul, a {
   line-height: 2.8;
+  color: #5cad7b;
+  font-size: 16px;
 }
+
 .footer {
-  background: #2f3640;
+  background: #465872;
   color: #ffffff;
   font-size: 20px;
   padding: 20px 0;
@@ -356,6 +362,7 @@ Creando el Grid*/
   .menu-btn {
     display: block;
     color: red;
+    
   }
   #btn-down:hover {
     transform: scale(1.0);
@@ -381,7 +388,6 @@ Creando el Grid*/
     left: 0;
     text-align: center;
     background: #c7d0dc;
-    width: 50%;
     height: 100%;
     border-right: #ccc 1px solid;
     opacity: 0.9;
@@ -402,6 +408,7 @@ Creando el Grid*/
   .nav-main ul.nav-menu.show {
     transform: translateX(-20px);
   }
+  
 
   .nav-main ul.nav-menu-right {
     margin-right: 50px;
@@ -415,18 +422,18 @@ Creando el Grid*/
   .cards-banner-two .content {
     width: 80%;
   }
-
+  
   .footer-links .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .news-cards {
     grid-template-columns: 1fr;
   }
   #btn-down:hover {
     transform: scale(1.0);
-    border-color: violet;
+    border-color: green;
   }
   .cards-banner-one .content,
   .cards-banner-two .content {
