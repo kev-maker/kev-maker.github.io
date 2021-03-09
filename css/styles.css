@@ -47,16 +47,28 @@ body {
   }
 
   /* EFECTO ESCRITURA */
-  header .typed {
+  .typed {
     display: inline;
+    text-align: center;
     font-weight: bold;
     color: #c99806;
     font-style: normal;
+    font-size: 26px;
+    margin-top: 40px;
   }
+  .titulo {
+    position: static;
+    display: inline-block;
+    margin-top: 90px;
+    text-align: center;
+    justify-items: center;
+  }
+
+    
 
   /* MODO DARK */
 body.dark .label {
-  color: rgb(28, 94, 121);
+  color: rgb(13, 246, 83);
   padding-bottom: 25px;
 }
   
@@ -115,9 +127,12 @@ body.dark .menu-btn {
 
 }
 
-body.dark a,
+body.dark a {
+  color:  rgb(1, 218, 12);
+}
 body.dark p {
   color:  rgb(1, 218, 12);
+  font-size: 20px;
 }
 body.dark h2 {
   color: rgb(214, 32, 32);
@@ -376,6 +391,7 @@ Creando el Grid*/
     font-size: 2px;
     justify-content: center;
     align-items: center;
+    color: red;
   }
   .menu-btn:hover {
     opacity: none;
